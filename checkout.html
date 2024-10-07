@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checkout - Online Construction Store</title>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    
+    <div class="checkout-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Dynamically filled with cart items -->
+        </div>
+
+        <h3>Delivery Address</h3>
+        <form id="checkout-form">
+            <div class="address-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address Line 1" required>
+                <input type="text" placeholder="Address Line 2">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+                <input type="text" placeholder="Zip Code" required>
+                <input type="text" placeholder="Phone Number" required>
+            </div>
+            
+            <h3>Payment Information</h3>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="upi" name="payment" value="UPI" required>
+                    <label for="upi">UPI</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="debit-card" name="payment" value="Debit Card" required>
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment" value="Credit Card" required>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="net-banking" name="payment" value="Net Banking" required>
+                    <label for="net-banking">Net Banking</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="emi" name="payment" value="EMI" required>
+                    <label for="emi">EMI</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment" value="Cash on Delivery" required>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+            </div>
+            
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Online Construction Store</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
